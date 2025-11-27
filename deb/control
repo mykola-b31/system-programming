@@ -1,9 +1,0 @@
-Package: count-files
-Version: 1.0-1
-Section: utils
-Priority: optional
-Architecture: all
-Depends: bash, findutils, coreutils
-Maintainer: Mykola Babko <babko.mykola@stu.cn.ua>
-Description: Script to count files in /etc
- This package provides a Bash script that counts files in /etc and its subdirectories.
