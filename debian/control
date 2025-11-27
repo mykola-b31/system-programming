@@ -1,0 +1,12 @@
+Source: count-files
+Section: utils
+Priority: optional
+Maintainer: Mykola Babko <babko.mykola@stu.cn.ua>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.2.0
+
+Package: count-files
+Architecture: all
+Depends: bash, findutils, coreutils, ${misc:Depends}
+Description: Script to count files in /etc
+ This package provides a Bash script that counts files in /etc and its subdirectories.
