@@ -27,7 +27,7 @@ pipeline {
                         sudo dpkg -i ../count-files_*.deb
 
                         echo "Executing script from package"
-                        sudo count_files
+                        sudo count_files.sh
 
                         echo "Uninstalling DEB package"
                         sudo dpkg -r count-files
