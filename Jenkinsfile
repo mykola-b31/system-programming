@@ -24,13 +24,13 @@ pipeline {
                         dpkg-buildpackage -us -uc -b
 
                         echo "Installing DEB package"
-                        dpkg -i ../count-files_*.deb
+                        sudo dpkg -i ../count-files_*.deb
 
                         echo "Executing script from package"
-                        count_files
+                        sudo count_files
 
                         echo "Uninstalling DEB package"
-                        dpkg -r count-files
+                        sudo dpkg -r count-files
                     '''
                 }
             }
@@ -49,13 +49,13 @@ pipeline {
                         rpmbuild -bb ~/rpmbuild/SPECS/count_files.spec
 
                         echo "Installing RPM package"
-                        rpm -ivh --force ~/rpmbuild/RPMS/noarch/count_files-*.rpm
+                        sudo rpm -ivh --force --nodeps ~/rpmbuild/RPMS/noarch/count_files-*.rpm
 
                         echo "Executing script from package"
-                        count_files
+                        sudo count_files
 
                         echo "Uninstalling RPM package"
-                        rpm -e count_files
+                        sudo rpm -e count_files
                     '''
                 }
             }
