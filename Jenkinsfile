@@ -42,7 +42,13 @@ pipeline {
                     sh '''
                         echo "Building RPM package"
 
-                        mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+                        mkdir -p \
+                            ~/rpmbuild/BUILD \
+                            ~/rpmbuild/RPMS \
+                            ~/rpmbuild/SOURCES \
+                            ~/rpmbuild/SPECS \
+                            ~/rpmbuild/SRPMS
+                            
                         cp count_files.sh ~/rpmbuild/SOURCES/
                         cp rpm/count_files.spec ~/rpmbuild/SPECS/
 
