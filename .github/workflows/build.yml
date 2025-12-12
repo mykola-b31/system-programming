@@ -46,10 +46,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: deb-package
-        path: *.deb
+        path: "*.deb"
 
     - name: Upload RPM Artifact
       uses: actions/upload-artifact@v4
       with:
         name: rpm-package
-        path: *.rpm
+        path: "*.rpm"
