@@ -40,16 +40,16 @@ jobs:
         
         cp ~/rpmbuild/RPMS/noarch/*.rpm .
         
-        ls -l ~/rpmbuild/RPMS/noarch/*.rpm
+        ls -l *.rpm
 
     - name: Upload DEB Artifact
       uses: actions/upload-artifact@v4
       with:
         name: deb-package
-        path: ../*.deb
+        path: *.deb
 
     - name: Upload RPM Artifact
       uses: actions/upload-artifact@v4
       with:
         name: rpm-package
-        path: ~/rpmbuild/RPMS/noarch/*.rpm
+        path: *.rpm
