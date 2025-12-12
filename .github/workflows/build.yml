@@ -24,7 +24,9 @@ jobs:
         echo "--- Building DEB ---"
         dpkg-buildpackage -us -uc -b
         
-        ls -l ../*.deb
+        mv ../*.deb .
+        
+        ls -l *.deb
 
     - name: Build RPM Package
       run: |
@@ -35,6 +37,8 @@ jobs:
         
         echo "--- Building RPM ---"
         rpmbuild -bb ~/rpmbuild/SPECS/count_files.spec
+        
+        cp ~/rpmbuild/RPMS/noarch/*.rpm .
         
         ls -l ~/rpmbuild/RPMS/noarch/*.rpm
 
