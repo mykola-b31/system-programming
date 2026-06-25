@@ -4,6 +4,15 @@
 
 This repository demonstrates a complete CI/CD workflow for automating the build, testing, and packaging of a Linux utility. It transforms a simple Bash script into native installer packages for both Debian-based and RedHat-based distributions.
 
+## Tech Stack
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+
 ## Key Features
 
 * **Automated Packaging:** Includes fully configured specification and control files to build `.deb` and `.rpm` packages.
